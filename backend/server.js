@@ -3,8 +3,6 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import Issue from './models/Issue';
-import { runInNewContext } from 'vm';
-import { RSA_NO_PADDING } from 'constants';
 
 const app = express();
 const router = express.Router();

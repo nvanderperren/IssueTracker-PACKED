@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IssueService } from 'src/app/issue.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private issueService: IssueService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
