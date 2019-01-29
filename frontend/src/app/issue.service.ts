@@ -28,7 +28,7 @@ export class IssueService {
   }
 
   updateIssue(id: string, title: string, responsible: string,
-    description: string, severity: string) {
+    description: string, severity: string, status: string) {
     const issue = {
       title, responsible, description, severity, status
     };

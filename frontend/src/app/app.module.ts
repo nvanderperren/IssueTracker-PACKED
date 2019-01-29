@@ -21,7 +21,8 @@ import {
   MatSnackBarModule
 } from '@angular/material';
 import { IssueService } from './issue.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { HttpClient } from '@angular/common/http';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClient,
+    HttpClientModule,
     AppRoutingModule,
     MatToolbarModule,
     MatFormFieldModule,
@@ -45,7 +46,8 @@ import { HttpClient } from '@angular/common/http';
     MatCardModule,
     MatTableModule,
     MatDividerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [ IssueService ],
   bootstrap: [AppComponent]
