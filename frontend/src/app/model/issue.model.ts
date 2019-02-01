@@ -1,9 +1,9 @@
-export interface Issue {
+export class Issue {
   id: string;
   title: string;
   responsible: string;
   description: string;
-  severity: String;
-  status: String;
+  severity: string;
+  status: string;
 
 }
